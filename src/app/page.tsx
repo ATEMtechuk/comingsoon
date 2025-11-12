@@ -1,46 +1,46 @@
-'use client';
+"use client";
 
-import { useState, FormEvent } from 'react';
+import { useState, FormEvent } from "react";
 
 export default function Home() {
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
-  const [messageType, setMessageType] = useState<'success' | 'error' | ''>('');
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [messageType, setMessageType] = useState<"success" | "error" | "">("");
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const trimmedEmail = email.trim();
 
-    setMessage('');
-    setMessageType('');
+    setMessage("");
+    setMessageType("");
 
     if (!trimmedEmail) {
-      setMessage('Please enter a valid email address.');
-      setMessageType('error');
+      setMessage("Please enter a valid email address.");
+      setMessageType("error");
       return;
     }
 
     try {
-      const response = await fetch('https://your-backend.com/api/subscribe', {
-        method: 'POST',
+      const response = await fetch("https://your-backend.com/api/subscribe", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({ email: trimmedEmail }),
       });
 
       if (response.ok) {
-        setMessage('✓ Thank you! Check your email for confirmation.');
-        setMessageType('success');
-        setEmail('');
+        setMessage("✓ Thank you! Check your email for confirmation.");
+        setMessageType("success");
+        setEmail("");
       } else {
-        setMessage('Something went wrong. Please try again.');
-        setMessageType('error');
+        setMessage("Something went wrong. Please try again.");
+        setMessageType("error");
       }
     } catch (error) {
-      setMessage('Network error. Please try again later.');
-      setMessageType('error');
+      setMessage("Network error. Please try again later.");
+      setMessageType("error");
     }
   };
 
@@ -59,7 +59,9 @@ export default function Home() {
           </div>
 
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.1] mb-6 bg-linear-to-b from-slate-50 via-slate-200 to-slate-400 bg-clip-text text-transparent tracking-tight">
-            The First AI-Native DFY<br />Acquisition Engine
+            The First AI-Native DFY
+            <br />
+            Acquisition Engine
           </h1>
 
           <p className="text-xl text-slate-300 mb-4 leading-relaxed max-w-2xl mx-auto font-light">
@@ -67,10 +69,15 @@ export default function Home() {
           </p>
 
           <p className="text-base text-slate-500 mb-14 leading-relaxed max-w-2xl mx-auto">
-            Transform your client acquisition with an intelligent, automated platform engineered to scale your agency with precision and efficiency.
+            Transform your client acquisition with an intelligent, automated
+            platform engineered to scale your agency with precision and
+            efficiency.
           </p>
 
-          <form className="flex gap-3 mb-6 flex-wrap justify-center max-w-xl mx-auto" onSubmit={handleSubmit}>
+          <form
+            className="flex gap-3 mb-6 flex-wrap justify-center max-w-xl mx-auto"
+            onSubmit={handleSubmit}
+          >
             <input
               type="email"
               className="flex-1 min-w-[280px] px-6 py-4 bg-slate-950/50 border border-slate-800 text-slate-200 text-base transition-all duration-200 backdrop-blur-sm placeholder:text-slate-600 focus:outline-none focus:border-slate-600 focus:bg-slate-950/80"
@@ -87,10 +94,18 @@ export default function Home() {
             </button>
           </form>
 
-          <div className={`mt-4 text-sm min-h-5 ${messageType === 'success' ? 'text-emerald-400' : messageType === 'error' ? 'text-red-400' : ''}`}>
+          <div
+            className={`mt-4 text-sm min-h-5 ${
+              messageType === "success"
+                ? "text-emerald-400"
+                : messageType === "error"
+                ? "text-red-400"
+                : ""
+            }`}
+          >
             {message}
           </div>
-
+          {/* Features Section 
           <div className="mt-24 pt-20 border-t border-slate-800/50">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-px bg-slate-800/30">
               <div className="bg-black p-8 group hover:bg-slate-950/50 transition-colors duration-300">
@@ -106,6 +121,7 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+              
 
               <div className="bg-black p-8 group hover:bg-slate-950/50 transition-colors duration-300">
                 <div className="flex items-start gap-4">
@@ -119,7 +135,9 @@ export default function Home() {
                     <p className="text-sm text-slate-500 leading-relaxed">Fully automated deployment and management. Zero configuration required, start acquiring clients immediately.</p>
                   </div>
                 </div>
+                
               </div>
+             
 
               <div className="bg-black p-8 group hover:bg-slate-950/50 transition-colors duration-300">
                 <div className="flex items-start gap-4">
@@ -133,9 +151,13 @@ export default function Home() {
                     <p className="text-sm text-slate-500 leading-relaxed">Built by agency operators who understand the challenges of scaling client acquisition and retention.</p>
                   </div>
                 </div>
+                
               </div>
+              
             </div>
+            
           </div>
+           */}
         </div>
       </div>
     </div>
