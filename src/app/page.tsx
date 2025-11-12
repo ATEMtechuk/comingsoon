@@ -50,21 +50,22 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,var(--tw-gradient-stops))] from-slate-900/40 via-transparent to-transparent"></div>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,var(--tw-gradient-stops))] from-slate-800/30 via-transparent to-transparent"></div>
         <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-slate-700/50 to-transparent"></div>
+
+        {/* Glowing orbs inspired by a-leads.co */}
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px] animate-pulse-slow"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-600/20 rounded-full blur-[120px] animate-pulse-slow delay-1000"></div>
       </div>
 
-      <div className="container max-w-4xl px-6 py-10 z-10 relative">
-        <div className="content relative z-10">
-          <div className="inline-block px-5 py-2 bg-slate-900/80 border border-slate-700/50 backdrop-blur-sm text-xs font-medium text-slate-400 mb-8 uppercase tracking-wider">
-            Coming Soon
-          </div>
+      <div className="container max-w-5xl px-6 py-10 z-10 relative">
+        <div className="content relative z-10 text-center">
 
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold leading-[1.1] mb-6 bg-linear-to-b from-slate-50 via-slate-200 to-slate-400 bg-clip-text text-transparent tracking-tight">
-            The First AI-Native DFY
+          <h1 className="text-5xl sm:text-6xl md:text-8xl font-bold leading-[1.05] mb-8 bg-linear-to-b from-white via-slate-100 to-slate-400 bg-clip-text text-transparent tracking-tight">
+            The first AI-native DFY
             <br />
-            Acquisition Engine
+            acquisition engine.
           </h1>
 
-          <p className="text-xl text-slate-300 mb-4 leading-relaxed max-w-2xl mx-auto font-light">
+          <p className="text-2xl sm:text-3xl text-slate-300 mb-6 leading-relaxed max-w-3xl mx-auto font-light">
             Built for agencies, by an agency.
           </p>
 
@@ -80,7 +81,7 @@ export default function Home() {
           >
             <input
               type="email"
-              className="flex-1 min-w-[280px] px-6 py-4 bg-slate-950/50 border border-slate-800 text-slate-200 text-base transition-all duration-200 backdrop-blur-sm placeholder:text-slate-600 focus:outline-none focus:border-slate-600 focus:bg-slate-950/80"
+              className="flex-1 min-w-[280px] rounded-md px-6 py-4 bg-slate-950/50 border border-slate-800 text-slate-200 text-base transition-all duration-200 backdrop-blur-sm placeholder:text-slate-600 focus:outline-none focus:border-slate-600 focus:bg-slate-950/80"
               placeholder="Enter your email address"
               required
               value={email}
@@ -88,7 +89,7 @@ export default function Home() {
             />
             <button
               type="submit"
-              className="px-10 py-4 bg-slate-50 text-black font-semibold text-base cursor-pointer transition-all duration-200 whitespace-nowrap hover:bg-white active:scale-[0.98]"
+              className="px-10 py-4 rounded-md bg-slate-50 text-black font-semibold text-base cursor-pointer transition-all duration-200 whitespace-nowrap hover:bg-white active:scale-[0.98]"
             >
               Get Early Access
             </button>
