@@ -83,19 +83,64 @@ export default function Home() {
       <div className="flex-1 flex items-center justify-center pt-20 pb-10 px-6 z-10 relative">
         <div className="content text-center max-w-5xl">
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.1] mb-8 bg-linear-to-b from-white via-slate-100 to-slate-400 bg-clip-text text-transparent tracking-tight overflow-hidden">
-            The first AI-native DFY acquisition engine.
+            The first AI-native lead intelligence and acquisition engine.
           </h1>
 
-          <p className="text-xl sm:text-2xl text-slate-300 mb-4 leading-relaxed font-light">
-            Built for agencies, by an agency.
+          <p className="text-xl sm:text-2xl text-slate-300 mb-6 leading-relaxed font-light">
+            Built specifically for marketing agencies.
           </p>
 
-          <p className="text-sm sm:text-base text-slate-500 mb-12 leading-relaxed max-w-2xl mx-auto">
-            Stop wasting time on manual prospecting. comingsoon automates your
-            entire client acquisition pipeline with AI-powered lead intelligence,
-            multi-channel outreach, and predictive analytics—so you can focus on
-            closing deals.
+          <p className="text-sm sm:text-base text-slate-500 mb-8 leading-relaxed max-w-3xl mx-auto">
+            Unlike generic data brokers or workflow tools, comingsoon combines
+            multi-agent research, contextual intelligence, and strategy generation
+            to help agencies identify, analyze, and close high-value clients at
+            scale.
           </p>
+
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mb-12 max-w-2xl mx-auto text-xs sm:text-sm text-slate-400">
+            <div className="flex items-center gap-2">
+              <svg
+                className="w-4 h-4 text-blue-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              Multi-agent research
+            </div>
+            <div className="flex items-center gap-2">
+              <svg
+                className="w-4 h-4 text-purple-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              Contextual intelligence
+            </div>
+            <div className="flex items-center gap-2">
+              <svg
+                className="w-4 h-4 text-pink-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              Strategy generation
+            </div>
+          </div>
 
           <form
             className="flex flex-col sm:flex-row gap-3 mb-6 justify-center max-w-2xl mx-auto"
