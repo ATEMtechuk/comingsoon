@@ -83,7 +83,7 @@ export default function Home() {
       <div className="flex-1 flex items-center justify-center pt-20 pb-10 px-6 z-10 relative">
         <div className="content text-center max-w-5xl">
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.1] mb-8 bg-linear-to-b from-white via-slate-100 to-slate-400 bg-clip-text text-transparent tracking-tight overflow-hidden">
-            The first AI-native lead intelligence and acquisition engine.
+            The first AI-native lead intelligence engine.
           </h1>
 
           <p className="text-xl sm:text-2xl text-slate-300 mb-6 leading-relaxed font-light">
